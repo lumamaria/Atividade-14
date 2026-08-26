@@ -9,7 +9,7 @@
     <div class="detail-container">
         <div class="detail-header">
             <h1>Detalhes do Aluno</h1>
-            <a href="{% url 'alunos:alunos-list' %}" class="btn-back">← Voltar para lista</a>
+            <a href="{% url 'alunos:alunos_list' %}" class="btn-back">← Voltar para lista</a>
         </div>
         
         <div class="detail-card">
@@ -30,20 +30,12 @@
                 </div>
                 
                 <div class="info-row">
-                    <span class="info-label">Período:</span>
-                    <span class="info-value">{{ aluno.periodo }}</span>
-                </div>
-                
-                <div class="info-row">
                     <span class="info-label">Email:</span>
                     <span class="info-value"><a href="mailto:{{ aluno.email }}">{{ aluno.email }}</a></span>
                 </div>
-                
-                <div class="info-row">
-                    <span class="info-label">Telefone:</span>
-                    <span class="info-value">{{ aluno.telefone }}</span>
-                </div>
+
             </div>
         </div>
     </div>
 {% endblock %}
+
